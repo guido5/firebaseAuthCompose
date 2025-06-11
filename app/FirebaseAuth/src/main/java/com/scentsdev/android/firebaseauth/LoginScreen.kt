@@ -23,7 +23,11 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun LoginScreen() {
     Column(modifier = Modifier.fillMaxSize()) {
-
+        Box {
+            Row {
+                println("Hoo")
+            }
+        }
     }
 }
 

@@ -7,10 +7,10 @@ plugins {
     alias(libs.plugins.sonar.qube)
 }
 
-sonar {
-    properties {
-        property("sonar.projectKey", "guido5_FirebaseAuthAndroid")
-        property("sonar.organization", "guido5")
-        property("sonar.host.url", "https://sonarcloud.io")
-    }
-}
+//sonar {
+//    properties {
+//        property("sonar.projectKey", "guido5_FirebaseAuthAndroid")
+//        property("sonar.organization", "guido5")
+//        property("sonar.host.url", "https://sonarcloud.io")
+//    }
+//}

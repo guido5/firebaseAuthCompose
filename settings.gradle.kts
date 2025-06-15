@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "FirebaseAuth"
 include(":app")
-include(":app:FirebaseAuth")
+include(":FirebaseAuth")

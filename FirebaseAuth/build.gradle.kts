@@ -1,3 +1,5 @@
+import okhttp3.HttpUrl.Companion.toHttpUrl
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -45,6 +47,17 @@ android {
 }
 
 publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/octocat/hello-world".toHttpUrl().toUri()
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+
     publications {
         register<MavenPublication>("release") {
             groupId = "com.my-company"

@@ -9,6 +9,9 @@ jobs:
   create-version:
     name: Compiling and publishing
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout to repository
         uses: actions/checkout@v4
